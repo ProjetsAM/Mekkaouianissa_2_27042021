@@ -2,7 +2,7 @@
 <html lang="fr">
    <head>
       <meta charset="utf-8" />
-      <meta name="viewport" content="width-device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
          crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,8 +18,8 @@
             <nav>
                <div class="navigation">
                   <ul>
-                     <li class="color1"><a href="#bloc_hebergement">Hébergements</a></li>
-                     <li class="color2"><a href="#bloc_activites">Activités</a></li>
+                     <li class="color1 bottom"><a href="#bloc_hebergements">Hébergements</a></li>
+                     <li class="color2 bottom_grey"><a href="#bloc_activites">Activités</a></li>
                      <li class="color1"><a href="#">S'inscrire</a></li>
                   </ul>
                </div>
@@ -33,8 +33,7 @@
                <div class="section_rechercher">
                   <div class="icon_rechercher"><i class="fas fa-map-marker-alt"></i></div>
                   <div><input class="recherche" type="search" id="rechercher" name="search" placeholder="Marseille, France"></div>
-                  <div class="bouton_r">Rechercher</div>
-                  <i class="responsive_icon fas fa-search" aria-hidden="true"></i>
+                   <span class="bouton_rechercher"><i class="fas fa-search" aria-hidden="true"></i>Rechercher</span>
                </div>
             </div>
          </section>
@@ -44,6 +43,7 @@
                <div class="titrefiltres">
                   <h3>Filtres</h3>
                </div>
+             <div class=boutons_filtres>
                <div class="filtre">
                   <i class="fas fa-money-bill-wave-alt color"></i>
                   <div class="les_filtres">Economique</div>
@@ -58,8 +58,9 @@
                </div>
                <div class="filtre">
                   <i class="fas fa-dog color"></i>
-                  <div class="les_filtres">Animaux autorisés</div>
+                 <div class="les_filtres">Animaux autorisés</div>
                </div>
+             </div>
             </div>
             <div class="iconinfo">
                <div class="icone"><i class="fas fa-info"></i></div>
@@ -68,7 +69,7 @@
          </section>
          <!-- Section 2 Hébergements -->
          <div class="sectionsh_a">
-            <section id="bloc_hebergement">
+            <section id="bloc_hebergements">
                <div class="titre_hebergement">
                   <h3>Hébergements à Marseille</h3>
                </div>
@@ -138,8 +139,7 @@
                         </div>
                      </a>
                   </div>
-               </div>
-               <div class="bloc">
+               
                   <div class="carte_hebergement">
                      <a href="#">
                         <div class="hebergement">
@@ -211,12 +211,11 @@
             <!-- Aside -->
             <aside id="bloc_populaires">
                <div class="titre_populaires">
-                  <div>
                      <h3>Les plus populaires </h3>
-                  </div>
                   <i class="fas fa-chart-line"></i>
                </div>
                <div>
+                 <a href="#">
                   <div class="cartepop">
                      <div class="aside">
                         <div class="aside_photo"><img class="imageaside" src="images/hotel/emilee.jpg" alt="Hôtel_lesoleil" />
@@ -238,6 +237,8 @@
                         </div>
                      </div>
                   </div>
+                 </a>
+                 <a href="#">
                   <div class="cartepop">
                      <div class="aside">
                         <div class="aside_photo"><img class="imageaside" src="images/hotel/aw.jpg" alt="Chambres_hotes" />
@@ -259,6 +260,8 @@
                         </div>
                      </div>
                   </div>
+                 </a>
+                 <a href="#">
                   <div class="cartepop">
                      <div class="aside">
                         <div class="aside_photo"><img class="imageaside" src="images/hotel/febrian.jpg"
@@ -280,44 +283,58 @@
                         </div>
                      </div>
                   </div>
+                 </a> 
                </div>
+            
             </aside>
          </div>
          <!-- Section 3 -->
          <section id="bloc_activites">
             <h2>Activités à Marseille</h2>
            <div class="flex">
-            <div class="activites">
+             <div class="activites">
+              <a href="#">
                <div class="cube_activites">
                   <div class="imgactivites_lg1 imgactivites"></div>
                   <h3>Vieux Port</h3>
                </div>
-            </div>
+              </a> 
+             </div>
             <div class="activites2">
+              <a href="#">
                <div class="cube_activites">
                   <div class="imgactivites_md imgactivites"></div>
                   <h3>Fort de Pomègues</h3>
                </div>
+              </a> 
+              <a href="#">
                <div class="cube_activites">   
                   <div class="imgactivites_xs imgactivites"></div>
                   <h3>Îles du Frioul</h3>
                </div>
+              </a> 
             </div>
             <div class="activites">
+              <a href="#">
                <div class="cube_activites">
                   <div class="imgactivites_lg2 imgactivites"></div>
                   <h3>Parc National des Calanques</h3>
                </div>
+              </a> 
             </div>
             <div class="activites2">
+              <a href="#">
                <div class="cube_activites">
                   <div class="imgactivites_s imgactivites"></div>
                   <h3>Notre-Dame-de-la-Garde</h3>
                </div>
+              </a> 
+              <a href="#">
                <div class="cube_activites">
                   <div class="imgactivites_md2 imgactivites"></div>
                   <h3>Parc Longchamp</h3>
                </div>
+              </a> 
             </div>
            </div> 
          </section>

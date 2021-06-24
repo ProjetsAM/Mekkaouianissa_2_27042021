@@ -7,7 +7,7 @@ body {
 }
 
 #bloc_page {
-  /*width: 1400px;*/
+  width: 100%;
   margin: 0 auto;
   max-width: 1400px;
   padding: 0 10px;
@@ -16,7 +16,6 @@ body {
 /* Header */
 
 header {
-  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -80,7 +79,6 @@ section p {
 
 .section_rechercher {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 325px;
   border-radius: 10px;
@@ -96,10 +94,6 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px 0 0 10px #f2f2f2;
-}
-.responsive_icon {
-  display: none;
 }
 
 .recherche {
@@ -119,7 +113,7 @@ section p {
   color: black;
 }
 
-.bouton_r {
+.bouton_rechercher {
   background-color: #0065fc;
   display: flex;
   justify-content: center;
@@ -133,8 +127,12 @@ section p {
   font-weight: bold;
 }
 
+.bouton_rechercher i {
+  display: none;
+}
 /* Filtres section 1 */
 
+.boutons_filtres,
 .filtres {
   display: flex;
   align-items: center;
@@ -217,12 +215,12 @@ section p {
   display: flex;
 }
 
-#bloc_hebergement {
+#bloc_hebergements {
   width: 60%;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 10px 20px 10px 10px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   flex: 1;
 }
 .titre_hebergement {
@@ -249,6 +247,8 @@ section p {
   margin: 18px 10px 15px 10px;
   background: white;
   font-size: 13px;
+  box-shadow: 0 0 16px #f2f2f2;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -257,14 +257,13 @@ a {
   display: flex;
   flex-direction: column;
   color: black;
-  object-fit: cover;
 }
 .imageheberg {
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   margin: 2px;
   height: 120px;
-  width: 230px;
+  width: calc(100% - 4px);
 }
 
 .etoile {
@@ -361,7 +360,6 @@ a {
 #bloc_activites {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 10px;
 }
 .flex {
   display: flex;
@@ -371,10 +369,6 @@ a {
 .activites,
 .activites2 {
   width: 100%;
-}
-
-.activites,
-.activites2:hover {
   cursor: pointer;
 }
 
@@ -382,7 +376,7 @@ a {
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 0 0;
-  width: 290px;
+  width: 100%;
 }
 
 .imgactivites_lg1 {
@@ -416,7 +410,7 @@ a {
 }
 
 .cube_activites {
-  width: 290px;
+  width: calc(100% - 60px);
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px #f2f2f2;
   font-size: 13px;
@@ -427,6 +421,7 @@ a {
 .cube_activites h3 {
   padding-left: 15px;
   font-weight: bold;
+  color: black;
 }
 .activites2 {
   display: flex;
@@ -472,29 +467,77 @@ footer li {
 }
 
 @media screen and (max-width: 600px) {
+  nav a:hover {
+    border-top: none;
+  }
+
+  .bottom {
+    border-bottom: 2px #0065fc solid;
+    padding-bottom: 5px;
+  }
+  .bottom_grey {
+    border-bottom: 2px #f2f2f2 solid;
+    padding-bottom: 5px;
+  }
+  .boutons_filtres {
+    flex-direction: row;
+  }
+
+  .bouton_rechercher i {
+    background-color: #0065fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    width: 109px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .bouton_rechercher {
+    /* display: none;*/
+  }
+
+  #bloc_logo,
+  .sectionsh_a,
+  .bloc,
+  .flex {
+    flex-direction: column;
+  }
+  #bloc_hebergements {
+    background: none;
+  }
+  .sectionsh_a {
+    display: flex;
+  }
+  .sectionsh_a > #bloc_hebergements {
+    flex: 1;
+    order: 2;
+  }
+
+  .sectionsh_a > #bloc_populaires {
+    order: 1;
+  }
+
+  #bloc_hebergements,
+  #bloc_populaires {
+    width: 100%;
+  }
+
+  .imgactivites {
+    height: 200px;
+  }
+
   #footer {
     flex-direction: column;
     white-space: nowrap;
   }
-
-  #bloc_page {
-    padding: 0;
-  }
-
-  .filtres {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .bouton_r {
-    display: none;
-  }
-  .responsive_icon {
-    background: #0065fc;
-    color: #deebff;
-    border-radius: 10px;
-    font-size: 20px;
-    padding: 15px;
-    width: 20px;
-    border: 0px;
+}
+@media screen and (min-width: 1200px) {
+  header {
+    height: 70px;
   }
 }
