@@ -145,7 +145,7 @@ section p {
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .filtre {
@@ -227,7 +227,7 @@ section p {
   width: 65%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 20px 10px 20px;
   margin: 10px;
 }
 
@@ -246,17 +246,17 @@ section p {
 
 .bloc {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .carte_hebergement {
   border-radius: 20px;
   padding: 5px;
-  margin: 18px 10px 15px 10px;
   background: white;
   font-size: 13px;
   box-shadow: 0 0 16px #f2f2f2;
-  width: 100%;
+  width: 30%;
+  margin: 10px 10px 10px 10px;
 }
 
 a {
@@ -325,6 +325,7 @@ a {
 
 .descriptionhotel h3 {
   font-family: "Raleway-Bold", sans-serif;
+  margin: 0;
 }
 
 .cartepop {
@@ -366,6 +367,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 }
 
 .minidescription {
@@ -497,17 +499,33 @@ footer li {
     padding: 0;
   }
   header img,
-  h2,
   #bouton_recherche {
     margin-left: 10px;
+  }
+  .navigation {
+    width: 100%;
+  }
+  nav li,
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    padding: 0;
+    position: relative;
+    width: 100%;
   }
   nav a:hover {
     border-top: none;
   }
+  .responsive {
+    position: absolute;
+    top: -46px;
+    right: -370px;
+  }
   .bottom {
     border-bottom: 2px #0065fc solid;
-    padding-bottom: 5px;
   }
+
   .bottom_grey {
     border-bottom: 2px #f2f2f2 solid;
     padding-bottom: 5px;
@@ -535,6 +553,10 @@ footer li {
   .bouton_l {
     display: none;
   }
+
+  .iconinfo {
+    margin: 0 10px 20px;
+  }
   #bloc_logo,
   .sectionsh_a,
   .bloc,
@@ -546,8 +568,11 @@ footer li {
     padding: 0;
   }
   .carte_hebergement {
-    margin: 0;
+    /* margin: 10px;
+    padding: 5px;*/
+    width: 100%;
   }
+
   .sectionsh_a {
     display: flex;
   }
