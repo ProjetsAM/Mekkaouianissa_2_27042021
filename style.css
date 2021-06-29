@@ -62,14 +62,14 @@ nav a:hover {
 
 /* Sections */
 
-section h3,
-aside h3 {
+section h3 {
   font-size: 17px;
   font-weight: bold;
   font-family: "Raleway-Bold", sans-serif;
 }
 
-section h2 {
+section h2,
+aside h2 {
   font-size: 20px;
   font-weight: bold;
   font-family: "Raleway-Bold", sans-serif;
@@ -145,6 +145,7 @@ section p {
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .filtre {
@@ -319,8 +320,7 @@ a {
   align-items: center;
   justify-content: space-between;
   font-family: "Raleway-Bold", sans-serif;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 15px 25px 0 25px;
 }
 
 .descriptionhotel h3 {
@@ -496,6 +496,11 @@ footer li {
     margin: 0;
     padding: 0;
   }
+  header img,
+  h2,
+  #bouton_recherche {
+    margin-left: 10px;
+  }
   nav a:hover {
     border-top: none;
   }
@@ -507,11 +512,16 @@ footer li {
     border-bottom: 2px #f2f2f2 solid;
     padding-bottom: 5px;
   }
+
   .section_rechercher {
     padding-top: 10px;
   }
+
   .boutons_filtres {
     flex-direction: row;
+  }
+  .bouton_rechercher {
+    width: 50px;
   }
   .bouton_s {
     display: flex;
@@ -532,7 +542,7 @@ footer li {
     flex-direction: column;
   }
   #bloc_hebergements {
-    background: none;
+    background: transparent;
     padding: 0;
   }
   .carte_hebergement {
@@ -562,6 +572,8 @@ footer li {
   }
   .imgactivites {
     height: 200px;
+    margin: auto;
+    width: 100%;
   }
   .footer-segment {
     width: auto;
