@@ -14,7 +14,7 @@ body * {
   width: 100%;
   margin: 0 auto;
   max-width: 1400px;
-  padding: 0 10px;
+  padding: 0;
 }
 
 /* Header */
@@ -145,7 +145,6 @@ section p {
   flex-wrap: wrap;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 0;
 }
 
 .filtre {
@@ -227,8 +226,6 @@ section p {
   width: 65%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 10px 20px 10px 20px;
-  margin: 10px;
 }
 
 .titre_hebergement {
@@ -311,8 +308,9 @@ a {
   width: 30%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 5px;
-  margin: 10px 20px 10px 10px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .titre_populaires {
@@ -498,10 +496,7 @@ footer li {
     margin: 0;
     padding: 0;
   }
-  header img,
-  #bouton_recherche {
-    margin-left: 10px;
-  }
+
   .navigation {
     width: 100%;
   }
@@ -568,8 +563,6 @@ footer li {
     padding: 0;
   }
   .carte_hebergement {
-    /* margin: 10px;
-    padding: 5px;*/
     width: 100%;
   }
 
