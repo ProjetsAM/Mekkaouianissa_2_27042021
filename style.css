@@ -371,6 +371,7 @@ a {
 .minidescription {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /*Section Activités */
@@ -487,7 +488,9 @@ footer li {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+/* Format Mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   body * {
     box-sizing: border-box;
   }
@@ -515,7 +518,9 @@ footer li {
   .responsive {
     position: absolute;
     top: -46px;
-    right: -370px;
+    right: 10px;
+    width: auto;
+    font-weight: bold;
   }
   .bottom {
     border-bottom: 2px #0065fc solid;
@@ -586,7 +591,7 @@ footer li {
 
   .cube_activites {
     width: 100%;
-    margin: 20px 0 20px 10px;
+    margin: 20px 0 20px 0px;
   }
   .imgactivites {
     height: 200px;
@@ -599,6 +604,24 @@ footer li {
   #footer {
     flex-direction: column;
     white-space: nowrap;
+  }
+}
+
+/* Format Tablette */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #bloc_hebergements {
+    width: auto;
+  }
+
+  #bloc_populaires {
+    width: 50%;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
