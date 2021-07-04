@@ -612,7 +612,6 @@ footer li {
   }
   #bloc_populaires {
     border-radius: 0;
-    padding: 0;
   }
   .titre_populaires {
     padding: 0;
@@ -627,7 +626,7 @@ footer li {
     padding-left: 15px;
   }
   .cube_activites {
-    width: 100%;
+    width: auto;
     margin: 20px 0 20px 15px;
   }
   .imgactivites {
