@@ -223,7 +223,8 @@ section p {
   width: 65%;
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .titre_hebergement {
@@ -250,7 +251,7 @@ section p {
   background: white;
   font-size: 13px;
   box-shadow: 0 0 16px #f2f2f2;
-  width: 30%;
+  width: calc(33% - 18px);
   margin: 10px 10px 10px 10px;
 }
 
@@ -294,7 +295,7 @@ a {
 .afficher {
   margin: 0px;
   width: 100%;
-  padding: 30px 0 20px 20px;
+  padding: 35px 0 0 20px;
   font-size: 15px;
   font-weight: bold;
   font-family: "Raleway-Bold", sans-serif;
@@ -544,8 +545,9 @@ footer li {
     padding-left: 7px;
   }
   .section_rechercher {
-    padding-top: 10px;
-    width: 100%;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #f2f2f2;
   }
 
   .boutons_filtres {
@@ -554,12 +556,14 @@ footer li {
   .bouton_rechercher {
     width: 40px;
     border-radius: 10px;
-    height: 37px;
+    height: 39px;
   }
   .recherche {
     width: 270px;
     font-size: 17px;
     padding-left: 18px;
+    border-bottom: 0;
+    border-top: 0;
   }
   .icon-rechercher {
     width: 37px;
