@@ -649,20 +649,29 @@ footer li {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #bloc_hebergements {
-    width: 50%;
+    width: 60%;
+  }
+
+  nav a:hover {
+    border-top: 2px solid #0065fc;
   }
 
   #bloc_populaires {
-    width: 50%;
+    width: 40%;
   }
   .titre_populaires {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .carte_hebergement {
+  .bloc {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+  }
+  .carte_hebergement {
+    width: calc(47% - 8px);
+  }
+  .afficher {
+    padding: 15px 0 15px 15px;
   }
   .flex {
     display: flex;
