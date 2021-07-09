@@ -10,7 +10,6 @@ body * {
 }
 
 #bloc_page {
-  width: 100%;
   margin: 0 auto;
   max-width: 1400px;
   padding: 0 10px 0 10px;
@@ -676,10 +675,14 @@ footer li {
   .flex {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 33%;
   }
   .cube_activites {
-    margin: 15px;
+    margin: 15px 0 15px 15px;
+  }
+  .imgactivites {
+    width: 100%;
+    height: 150px;
   }
 }
 
