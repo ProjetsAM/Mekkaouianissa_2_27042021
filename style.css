@@ -27,6 +27,9 @@ header {
 header img {
   height: 45px;
 }
+h1 {
+  margin-top: 0px;
+}
 
 /*Navigation*/
 
@@ -507,7 +510,9 @@ footer li {
     margin: 0;
     padding: 0;
   }
-
+  h1 {
+    margin-bottom: -5px;
+  }
   nav li {
     margin-right: 0;
   }
@@ -653,6 +658,9 @@ footer li {
 /* Format Tablette */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    margin-top: 0px;
+  }
   #bloc_hebergements {
     width: 60%;
   }
