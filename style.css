@@ -59,8 +59,12 @@ nav a {
 
 nav a:hover {
   border-top: 2px solid #0065fc;
+  font-weight: bold;
+  color: #0065fc;
 }
-
+.navigation .color2 a:hover {
+  color: #0065fc;
+}
 /* Sections */
 
 section h3 {
@@ -501,6 +505,12 @@ footer li {
 
 /* Format Mobile */
 
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .section_rechercher {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   body * {
     box-sizing: border-box;
@@ -512,6 +522,14 @@ footer li {
   }
   h1 {
     margin-bottom: -5px;
+  }
+  .navigation li:hover {
+    border-bottom: 2px solid #0065fc;
+    font-weight: bold;
+    color: #0065fc;
+  }
+  .navigation .color2 a:hover {
+    color: #0065fc;
   }
   nav li {
     margin-right: 0;
